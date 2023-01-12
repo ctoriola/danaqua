@@ -43,955 +43,956 @@
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]--> 
-    <div class="preloader" id="loader"> 
-        <svg class="loading" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        width="574.558px" height="190px" viewBox="0 0 574.558 120" enable-background="new 0 0 574.558 120" xml:space="preserve">
-        <defs>
-            <pattern id="water" width=".25" height="1.1" patternContentUnits="objectBoundingBox">
-            <path fill="#fff" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,1z"/>
-            </pattern>
-            
-            <text id="text" transform="matrix(1 0 0 1 -8.0684 116.7852)" font-size="161.047">LOADING</text>
-            
-            <mask id="text_mask">
-            <use x="0" y="0" xlink:href="#text" opacity="1" fill="#3498db"/>
-            </mask>
-        </defs>
+    <div id="payment_check">
+        <div class="preloader" id="loader"> 
+            <svg class="loading" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="574.558px" height="190px" viewBox="0 0 574.558 120" enable-background="new 0 0 574.558 120" xml:space="preserve">
+            <defs>
+                <pattern id="water" width=".25" height="1.1" patternContentUnits="objectBoundingBox">
+                <path fill="#fff" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,1z"/>
+                </pattern>
+                
+                <text id="text" transform="matrix(1 0 0 1 -8.0684 116.7852)" font-size="161.047">LOADING</text>
+                
+                <mask id="text_mask">
+                <use x="0" y="0" xlink:href="#text" opacity="1" fill="#3498db"/>
+                </mask>
+            </defs>
 
+            
+            <use x="0" y="0" xlink:href="#text" fill="#3498db"/>
+            
+            <rect class="water-fill" mask="url(#text_mask)" fill="url(#water)" x="-400" y="0" width="1600" height="120"/>
+            </svg>
+        </div>
         
-        <use x="0" y="0" xlink:href="#text" fill="#3498db"/>
-        
-        <rect class="water-fill" mask="url(#text_mask)" fill="url(#water)" x="-400" y="0" width="1600" height="120"/>
-        </svg>
-    </div>
-    
-    <!--Main Wrapper Start-->
-    <div id="myDiv">
-        <div class="wrapper bg-white fix">
-            <!--Bg White Start-->
-            <div class="bg-white">
-                <!--Header Area Start-->
-                <header class="header-area sticker" id="topnav">
-                    <div class="header-wrapper header-padding">
-                        <div class="header-top">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-9">
-                                        <div class="top-left">
-                                            <ul>
-                                                <li><i class="zmdi zmdi-email"></i> demo@example.com</li>
-                                                <li><i class="zmdi zmdi-phone"></i> 0123456789</li>
-                                            </ul>
+        <!--Main Wrapper Start-->
+        <div id="myDiv">
+            <div class="wrapper bg-white fix">
+                <!--Bg White Start-->
+                <div class="bg-white">
+                    <!--Header Area Start-->
+                    <header class="header-area sticker" id="topnav">
+                        <div class="header-wrapper header-padding">
+                            <div class="header-top">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-9">
+                                            <div class="top-left">
+                                                <ul>
+                                                    <li><i class="zmdi zmdi-email"></i> demo@example.com</li>
+                                                    <li><i class="zmdi zmdi-phone"></i> 0123456789</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-3">
+                                            <div class="top-right">
+                                                <ul>
+                                                    <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+                                                    <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+                                                    <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
+                                                    <li><a href="#"><i class="zmdi zmdi-linkedin"></i></a></li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-sm-3">
-                                        <div class="top-right">
-                                            <ul>
-                                                <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
-                                                <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
-                                                <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
-                                                <li><a href="#"><i class="zmdi zmdi-linkedin"></i></a></li>
-                                            </ul>
+                                </div>
+                            </div>
+                            <div class="main-header">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <div class="logo">
+                                                <a href="index.html"><h3 style="color:#0148BC;font-family: 'Lilita One', cursive; ">Danaqua Swimming</h3></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <div class="menu-area">
+                                                <div class="menu-item">
+                                                    <!-- Mobile menu toggle-->
+                                                    <a class="navbar-toggle">
+                                                        <div class="lines">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </a>
+                                                    <!-- End mobile menu toggle-->
+                                                </div>
+                                            </div>				
+                                            <div id="navigation" class="main-menu">
+                                                <nav>
+                                                    <ul class="navigation-menu">
+                                                        <li><a href="index.html">home </a></li>
+                                                        <li><a href="">gallery </a></li>
+                                                        <li><a href="">courses </a>
+                                                            <!-- <ul class="submenu">
+                                                                <li><a href="grid-view-one.html">grid view one</a></li>
+                                                                <li><a href="grid-view-two.html">grid view two</a></li>
+                                                            </ul> -->
+                                                        </li>
+                                                        <li><a href="">contact</a></li>
+                                                    </ul>
+                                                </nav>		
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>        
+                        </div>      
+                    </header>
+                    <!-- End of Header Area -->
+                    <!-- Start Slider Area-->
+                    <section id="slider-container" class="slider-area"> 
+                        <div class="swimmer-owl-slider owl-carousel"> 
+                            <!-- Start Single Slide -->
+                            <div class="single-slide hs-item" style="background-image: url(assets/images/slider/1.jpg)">
+                                <!-- Start Slider Content -->
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">  
+                                            <div class="slider-content">  
+                                                <div class="hs-content slide-content text-center">
+                                                    <h3>swimming </h3>
+                                                    <h1>Dive into a world of swimming at Danaqua Swimming!</h1>
+                                                    <p>Unlock your swimming potential with our top-notch facilities and expert instructors. From beginners to pros, we have something for everyone. Join our swim classes today!</p>
+                                                    <a href="#" class="btn hidden-xs">read more</a>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Start Slider Content -->
+                            </div>
+                            <!-- End Single Slide -->			   
+                            <!-- Start Single Slide -->
+                            <div class="single-slide hs-item" style="background-image: url(assets/images/slider/2.jpg)">
+                                <!-- Start Slider Content -->  
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">  
+                                            <div class="slider-content">  
+                                                <div class="hs-content slide-content text-center">
+                                                    <h3>swimming </h3>
+                                                    <h1>a healthy activity for your kids</h1>
+                                                    <p>Give your child the gift of swimming with our youth swim classes. Safe and fun environment for kids of all ages and abilities. Enroll your child today!</p>
+                                                    <a href="#" class="btn hidden-xs">read more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Start Slider Content -->
+                            </div>
+                            <!-- End Single Slide -->
+                            <!-- Start Single Slide -->
+                            <div class="single-slide hs-item" style="background-image: url(assets/images/slider/3.jpg)">
+                                <!-- Start Slider Content -->
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">  
+                                            <div class="slider-content">  
+                                                <div class="hs-content slide-content text-center">
+                                                    <h3>swimming </h3>
+                                                    <h1>"Make a splash at Danaqua Swimming!</h1>
+                                                    <p>"Get in shape with a fun and challenging workout. Join our adult swim classes. Suitable for all skill levels. Sign up today!"</p>
+                                                    <a href="#" class="btn hidden-xs">read more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Start Slider Content -->
+                            </div>
+                            <!-- End Single Slide -->							
+                        </div>
+                    </section>
+                    <!-- End Slider Area -->
+                    <!--Start Class Area-->
+                    <div class="class-area text-center pt-80 pb-80">
+                        <div class="container">
+                            <div class="row g-4">     
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-class picton-border">
+                                        <div class="class-icon">
+                                            <img src="assets/images/class/icon-1.png" alt="class">
+                                        </div>
+                                        <div class="class-content">
+                                            <h3>Swim class for Children</h3>
+                                            <h6>Instructor Adom Jonson </h6>
+                                            <p class="hover">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. </p>
+                                            
+                                        </div>
+                                    </div> 
+                                </div>   
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-class cobalt-border">
+                                        <div class="class-icon">
+                                            <img src="assets/images/class/icon-2.png" alt="class">
+                                        </div>
+                                        <div class="class-content">
+                                            <h3>Swim class for Adults</h3>
+                                            <h6>Instructor Adom Jonson </h6>
+                                            <p class="hover">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. </p>
+                                                
+                                        </div>
+                                    </div> 
+                                </div>   
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-class cinnabar-border">
+                                        <div class="class-icon">
+                                            <img src="assets/images/class/icon-3.png" alt="class">
+                                        </div>
+                                        <div class="class-content">
+                                            <h3>Swim class for Schools</h3>
+                                            <h6>Instructor Adom Jonson </h6>
+                                            <p class="hover">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. </p>
+                                                
+                                        </div>
+                                    </div>    
+                                </div>  
+                            </div>
+                        </div>
+                    </div>    
+                    <!-- End of Class Area -->
+                    <!-- Start of Appointment Area -->
+                    <div class="appointment-area">
+                        <div class="container-fluid">
+                            <div class="row g-0">
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Appointment Area -->
+                    <!-- Start of Our Classes Area -->
+                    <div class="our-classes-area pt-73 pb-30">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="section-title text-center">
+                                        <h2>our classes</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="card">
+                                            <div class="card-header" id="headingOne">
+                                                <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                                    <span class="card-left"><img src="assets/images/icon/2.png" alt="icon">1 | 2-3 years</span>
+                                                    <span class="card-middle">Mini infant class</span>
+                                                    <span class="card-right"><i class="zmdi zmdi-minus"></i><i class="zmdi zmdi-plus hover"></i></span>
+                                                </button>
+                                            </div>
+                                            <div id="collapseOne" class="collapse fade show" data-bs-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <div class="row">   
+                                                        <div class="col-md-6">
+                                                            <div class="class-left">
+                                                                <h3 class="login-title">swim clasess for infant</h3>
+                                                                <p class="heading-p">Age 2-3 Years</p>
+                                                                <p class="heading-p">Class Time : 10am-11am</p>
+                                                                <p class="main">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis notrud.</p>
+                                                                <p class="heading-p">Totall Class - 20</p>
+                                                                <button><span>Register Now</span></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="class-right">
+                                                                <img src="assets/images/class/1.jpg" alt="class">
+                                                            </div>    
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="headingTwo">
+                                                <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                                    <span class="card-left"><img src="assets/images/icon/2.png" alt="icon">2 | 3-4 years</span>
+                                                    <span class="card-middle">Junior class</span>
+                                                    <span class="card-right"><i class="zmdi zmdi-minus"></i><i class="zmdi zmdi-plus hover"></i></span>
+                                                </button>
+                                            </div>
+                                            <div id="collapseTwo" class="collapse fade" data-bs-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <div class="row">   
+                                                        <div class="col-md-6">
+                                                            <div class="class-left">
+                                                                <h3 class="login-title">swim clasess for junior</h3>
+                                                                <p class="heading-p">Age 3-4 Years</p>
+                                                                <p class="heading-p">Class Time : 11am-12am</p>
+                                                                <p class="main">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis notrud.</p>
+                                                                <p class="heading-p">Totall Class - 20</p>
+                                                                <button><span>Register Now</span></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="class-right">
+                                                                <img src="assets/images/class/2.jpg" alt="class">
+                                                            </div>    
+                                                        </div>
+                                                    </div>   
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="headingThree">
+                                                <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                                    <span class="card-left"><img src="assets/images/icon/2.png" alt="icon">3 | 4-5 years</span>
+                                                    <span class="card-middle">Toddler class</span>
+                                                    <span class="card-right"><i class="zmdi zmdi-minus"></i><i class="zmdi zmdi-plus hover"></i></span>
+                                                </button>
+                                            </div>
+                                            <div id="collapseThree" class="collapse fade" data-bs-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <div class="row">   
+                                                        <div class="col-md-6">
+                                                            <div class="class-left">
+                                                                <h3 class="login-title">swim clasess for infant</h3>
+                                                                <p class="heading-p">Age 4-5 Years</p>
+                                                                <p class="heading-p">Class Time : 10am-11am</p>
+                                                                <p class="main">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis notrud.</p>
+                                                                <p class="heading-p">Totall Class - 20</p>
+                                                                <button><span>Register Now</span></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="class-right">
+                                                                <img src="assets/images/class/3.jpg" alt="class">
+                                                            </div>    
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="beginnerHeading">
+                                                <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#beginnerClass">
+                                                    <span class="card-left"><img src="assets/images/icon/2.png" alt="icon">4 | 5-6 years</span>
+                                                    <span class="card-middle">Beginner class</span>
+                                                    <span class="card-right"><i class="zmdi zmdi-minus"></i><i class="zmdi zmdi-plus hover"></i></span>
+                                                </button>
+                                            </div>
+                                            <div id="beginnerClass" class="collapse fade" data-bs-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <div class="row">   
+                                                        <div class="col-md-6">
+                                                            <div class="class-left">
+                                                                <h3 class="login-title">swim clasess for Beginner</h3>
+                                                                <p class="heading-p">Age 5-6 Years</p>
+                                                                <p class="heading-p">Class Time : 10am-11am</p>
+                                                                <p class="main">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis notrud.</p>
+                                                                <p class="heading-p">Totall Class - 20</p>
+                                                                <button><span>Register Now</span></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="class-right">
+                                                                <img src="assets/images/class/4.jpg" alt="class">
+                                                            </div>    
+                                                        </div>
+                                                    </div>   
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="adultHeading">
+                                                <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#adultClass">
+                                                    <span class="card-left"><img src="assets/images/icon/2.png" alt="icon">5 | 6-12 years</span>
+                                                    <span class="card-middle">Adult class</span>
+                                                    <span class="card-right"><i class="zmdi zmdi-minus"></i><i class="zmdi zmdi-plus hover"></i></span>
+                                                </button>
+                                            </div>
+                                            <div id="adultClass" class="collapse fade" data-bs-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <div class="row">   
+                                                        <div class="col-md-6">
+                                                            <div class="class-left">
+                                                                <h3 class="login-title">swim clasess for adult</h3>
+                                                                <p class="heading-p">Age 6-12 Years</p>
+                                                                <p class="heading-p">Class Time : 10am-11am</p>
+                                                                <p class="main">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis notrud.</p>
+                                                                <p class="heading-p">Totall Class - 20</p>
+                                                                <button><span>Register Now</span></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="class-right">
+                                                                <img src="assets/images/class/5.jpg" alt="class">
+                                                            </div>    
+                                                        </div>
+                                                    </div>     
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="main-header">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-3">
-                                        <div class="logo">
-                                            <a href="index.html"><h3 style="color:#0148BC;font-family: 'Lilita One', cursive; ">Danaqua Swimming</h3></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-9">
-                                        <div class="menu-area">
-                                            <div class="menu-item">
-                                                <!-- Mobile menu toggle-->
-                                                <a class="navbar-toggle">
-                                                    <div class="lines">
-                                                        <span></span>
-                                                        <span></span>
-                                                        <span></span>
-                                                    </div>
-                                                </a>
-                                                <!-- End mobile menu toggle-->
-                                            </div>
-                                        </div>				
-                                        <div id="navigation" class="main-menu">
-                                            <nav>
-                                                <ul class="navigation-menu">
-                                                    <li><a href="index.html">home </a></li>
-                                                    <li><a href="">gallery </a></li>
-                                                    <li><a href="">courses </a>
-                                                        <!-- <ul class="submenu">
-                                                            <li><a href="grid-view-one.html">grid view one</a></li>
-                                                            <li><a href="grid-view-two.html">grid view two</a></li>
-                                                        </ul> -->
-                                                    </li>
-                                                    <li><a href="">contact</a></li>
-                                                </ul>
-                                            </nav>		
-                                        </div>
+                    </div>
+                    <!-- End of Our Classes Area -->
+                    <!-- Start of Instructor Area -->
+                    <!-- <div class="instructor-area bg-gray pt-76 pb-80">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="section-title text-center">
+                                        <h2>our best instructor</h2>
                                     </div>
                                 </div>
                             </div>
-                        </div>        
-                    </div>      
-                </header>
-                <!-- End of Header Area -->
-                <!-- Start Slider Area-->
-                <section id="slider-container" class="slider-area"> 
-                    <div class="swimmer-owl-slider owl-carousel"> 
-                        <!-- Start Single Slide -->
-                        <div class="single-slide hs-item" style="background-image: url(assets/images/slider/1.jpg)">
-                            <!-- Start Slider Content -->
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-12">  
-                                        <div class="slider-content">  
-                                            <div class="hs-content slide-content text-center">
-                                                <h3>swimming </h3>
-                                                <h1>Dive into a world of swimming at Danaqua Swimming!</h1>
-                                                <p>Unlock your swimming potential with our top-notch facilities and expert instructors. From beginners to pros, we have something for everyone. Join our swim classes today!</p>
-                                                <a href="#" class="btn hidden-xs">read more</a>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10">
+                                    <div class="slick-wrapper">
+                                        <div class="insturctor-owl">
+                                            <div class="custom-col">
+                                                <div class="single-instructor blue">
+                                                    <div class="inst-img">
+                                                        <img src="assets/images/insturctor/2.jpg" alt="insturctor">
+                                                        <div class="inst-content text-center pt-36 pb-40 pl-30 pr-30">
+                                                            <h5>Swim Instructor</h5>
+                                                            <h6>Mohosin khan</h6>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                                            <ul>
+                                                                <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+                                                                <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+                                                                <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
+                                                                <li><a href="#"><i class="zmdi zmdi-linkedin"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="custom-col">
+                                                <div class="single-instructor red">
+                                                    <div class="inst-img">
+                                                        <img src="assets/images/insturctor/3.jpg" alt="insturctor">
+                                                        <div class="inst-content text-center pt-36 pb-40 pl-30 pr-30">
+                                                            <h5>Swim Instructor</h5>
+                                                            <h6>Mohosin khan</h6>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                                            <ul>
+                                                                <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+                                                                <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+                                                                <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
+                                                                <li><a href="#"><i class="zmdi zmdi-linkedin"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="custom-col">
+                                                <div class="single-instructor">
+                                                    <div class="inst-img">
+                                                        <img src="assets/images/insturctor/1.jpg" alt="insturctor">
+                                                        <div class="inst-content text-center pt-36 pb-40 pl-30 pr-30">
+                                                            <h5>Swim Instructor</h5>
+                                                            <h6>Mohosin khan</h6>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                                            <ul>
+                                                                <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+                                                                <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+                                                                <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
+                                                                <li><a href="#"><i class="zmdi zmdi-linkedin"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="custom-col">
+                                                <div class="single-instructor blue">
+                                                    <div class="inst-img">
+                                                        <img src="assets/images/insturctor/2.jpg" alt="insturctor">
+                                                        <div class="inst-content text-center pt-36 pb-40 pl-30 pr-30">
+                                                            <h5>Swim Instructor</h5>
+                                                            <h6>Mohosin khan</h6>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                                            <ul>
+                                                                <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+                                                                <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+                                                                <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
+                                                                <li><a href="#"><i class="zmdi zmdi-linkedin"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="custom-col">
+                                                <div class="single-instructor red">
+                                                    <div class="inst-img">
+                                                        <img src="assets/images/insturctor/3.jpg" alt="insturctor">
+                                                        <div class="inst-content text-center pt-36 pb-40 pl-30 pr-30">
+                                                            <h5>Swim Instructor</h5>
+                                                            <h6>Mohosin khan</h6>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                                            <ul>
+                                                                <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+                                                                <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+                                                                <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
+                                                                <li><a href="#"><i class="zmdi zmdi-linkedin"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="custom-col">
+                                                <div class="single-instructor">
+                                                    <div class="inst-img">
+                                                        <img src="assets/images/insturctor/1.jpg" alt="insturctor">
+                                                        <div class="inst-content text-center pt-36 pb-40 pl-30 pr-30">
+                                                            <h5>Swim Instructor</h5>
+                                                            <h6>Mohosin khan</h6>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                                            <ul>
+                                                                <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+                                                                <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+                                                                <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
+                                                                <li><a href="#"><i class="zmdi zmdi-linkedin"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div> 
                                     </div>
                                 </div>
                             </div>
-                            <!-- Start Slider Content -->
                         </div>
-                        <!-- End Single Slide -->			   
-                        <!-- Start Single Slide -->
-                        <div class="single-slide hs-item" style="background-image: url(assets/images/slider/2.jpg)">
-                            <!-- Start Slider Content -->  
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-12">  
-                                        <div class="slider-content">  
-                                            <div class="hs-content slide-content text-center">
-                                                <h3>swimming </h3>
-                                                <h1>a healthy activity for your kids</h1>
-                                                <p>Give your child the gift of swimming with our youth swim classes. Safe and fun environment for kids of all ages and abilities. Enroll your child today!</p>
-                                                <a href="#" class="btn hidden-xs">read more</a>
+                    </div> -->
+                    <!-- End of Instructor Area -->
+                    <!-- Start of Testimonal Area -->
+                    <div class="testimonial-area">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="testimonial-owl owl-carousel">
+                                        <div class="col">
+                                            <div class="testimonial-content text-center pt-75 pb-100 mt-80 mb-80">
+                                                <h3>what clients say?</h3>
+                                                <i class="zmdi zmdi-quote first"></i>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et daenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. voluptate velit esse cillum dolore eu fugiat swimmer ground</p>
+                                                <i class="zmdi zmdi-quote"></i>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Start Slider Content -->
-                        </div>
-                        <!-- End Single Slide -->
-                        <!-- Start Single Slide -->
-                        <div class="single-slide hs-item" style="background-image: url(assets/images/slider/3.jpg)">
-                            <!-- Start Slider Content -->
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-12">  
-                                        <div class="slider-content">  
-                                            <div class="hs-content slide-content text-center">
-                                                <h3>swimming </h3>
-                                                <h1>"Make a splash at Danaqua Swimming!</h1>
-                                                <p>"Get in shape with a fun and challenging workout. Join our adult swim classes. Suitable for all skill levels. Sign up today!"</p>
-                                                <a href="#" class="btn hidden-xs">read more</a>
+                                        <div class="col">
+                                            <div class="testimonial-content text-center pt-75 pb-100 mt-80 mb-80">
+                                                <h3>what client say?</h3>
+                                                <i class="zmdi zmdi-quote first"></i>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et daenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. voluptate velit esse cillum dolore eu fugiat swimmer ground</p>
+                                                <i class="zmdi zmdi-quote"></i>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Start Slider Content -->
-                        </div>
-                        <!-- End Single Slide -->							
-                    </div>
-                </section>
-                <!-- End Slider Area -->
-                <!--Start Class Area-->
-                <div class="class-area text-center pt-80 pb-80">
-                    <div class="container">
-                        <div class="row g-4">     
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single-class picton-border">
-                                    <div class="class-icon">
-                                        <img src="assets/images/class/icon-1.png" alt="class">
-                                    </div>
-                                    <div class="class-content">
-                                        <h3>Swim class for Children</h3>
-                                        <h6>Instructor Adom Jonson </h6>
-                                        <p class="hover">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. </p>
-                                        
-                                    </div>
-                                </div> 
-                            </div>   
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single-class cobalt-border">
-                                    <div class="class-icon">
-                                        <img src="assets/images/class/icon-2.png" alt="class">
-                                    </div>
-                                    <div class="class-content">
-                                        <h3>Swim class for Adults</h3>
-                                        <h6>Instructor Adom Jonson </h6>
-                                        <p class="hover">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. </p>
-                                            
-                                    </div>
-                                </div> 
-                            </div>   
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single-class cinnabar-border">
-                                    <div class="class-icon">
-                                        <img src="assets/images/class/icon-3.png" alt="class">
-                                    </div>
-                                    <div class="class-content">
-                                        <h3>Swim class for Schools</h3>
-                                        <h6>Instructor Adom Jonson </h6>
-                                        <p class="hover">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. </p>
-                                            
-                                    </div>
-                                </div>    
-                            </div>  
-                        </div>
-                    </div>
-                </div>    
-                <!-- End of Class Area -->
-                <!-- Start of Appointment Area -->
-                <div class="appointment-area">
-                    <div class="container-fluid">
-                        <div class="row g-0">
-                            
-                            
-                        </div>
-                    </div>
-                </div>
-                <!-- End of Appointment Area -->
-                <!-- Start of Our Classes Area -->
-                <div class="our-classes-area pt-73 pb-30">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="section-title text-center">
-                                    <h2>our classes</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="accordion" id="accordionExample">
-                                    <div class="card">
-                                        <div class="card-header" id="headingOne">
-                                            <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                                                <span class="card-left"><img src="assets/images/icon/2.png" alt="icon">1 | 2-3 years</span>
-                                                <span class="card-middle">Mini infant class</span>
-                                                <span class="card-right"><i class="zmdi zmdi-minus"></i><i class="zmdi zmdi-plus hover"></i></span>
-                                            </button>
-                                        </div>
-                                        <div id="collapseOne" class="collapse fade show" data-bs-parent="#accordionExample">
-                                            <div class="card-body">
-                                                <div class="row">   
-                                                    <div class="col-md-6">
-                                                        <div class="class-left">
-                                                            <h3 class="login-title">swim clasess for infant</h3>
-                                                            <p class="heading-p">Age 2-3 Years</p>
-                                                            <p class="heading-p">Class Time : 10am-11am</p>
-                                                            <p class="main">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis notrud.</p>
-                                                            <p class="heading-p">Totall Class - 20</p>
-                                                            <button><span>Register Now</span></button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="class-right">
-                                                            <img src="assets/images/class/1.jpg" alt="class">
-                                                        </div>    
-                                                    </div>
-                                                </div> 
+                                        <div class="col">
+                                            <div class="testimonial-content text-center pt-75 pb-100 mt-80 mb-80">
+                                                <h3>what client say?</h3>
+                                                <i class="zmdi zmdi-quote first"></i>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et daenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. voluptate velit esse cillum dolore eu fugiat swimmer ground</p>
+                                                <i class="zmdi zmdi-quote"></i>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header" id="headingTwo">
-                                            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-                                                <span class="card-left"><img src="assets/images/icon/2.png" alt="icon">2 | 3-4 years</span>
-                                                <span class="card-middle">Junior class</span>
-                                                <span class="card-right"><i class="zmdi zmdi-minus"></i><i class="zmdi zmdi-plus hover"></i></span>
-                                            </button>
-                                        </div>
-                                        <div id="collapseTwo" class="collapse fade" data-bs-parent="#accordionExample">
-                                            <div class="card-body">
-                                                <div class="row">   
-                                                    <div class="col-md-6">
-                                                        <div class="class-left">
-                                                            <h3 class="login-title">swim clasess for junior</h3>
-                                                            <p class="heading-p">Age 3-4 Years</p>
-                                                            <p class="heading-p">Class Time : 11am-12am</p>
-                                                            <p class="main">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis notrud.</p>
-                                                            <p class="heading-p">Totall Class - 20</p>
-                                                            <button><span>Register Now</span></button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="class-right">
-                                                            <img src="assets/images/class/2.jpg" alt="class">
-                                                        </div>    
-                                                    </div>
-                                                </div>   
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header" id="headingThree">
-                                            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">
-                                                <span class="card-left"><img src="assets/images/icon/2.png" alt="icon">3 | 4-5 years</span>
-                                                <span class="card-middle">Toddler class</span>
-                                                <span class="card-right"><i class="zmdi zmdi-minus"></i><i class="zmdi zmdi-plus hover"></i></span>
-                                            </button>
-                                        </div>
-                                        <div id="collapseThree" class="collapse fade" data-bs-parent="#accordionExample">
-                                            <div class="card-body">
-                                                <div class="row">   
-                                                    <div class="col-md-6">
-                                                        <div class="class-left">
-                                                            <h3 class="login-title">swim clasess for infant</h3>
-                                                            <p class="heading-p">Age 4-5 Years</p>
-                                                            <p class="heading-p">Class Time : 10am-11am</p>
-                                                            <p class="main">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis notrud.</p>
-                                                            <p class="heading-p">Totall Class - 20</p>
-                                                            <button><span>Register Now</span></button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="class-right">
-                                                            <img src="assets/images/class/3.jpg" alt="class">
-                                                        </div>    
-                                                    </div>
-                                                </div> 
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header" id="beginnerHeading">
-                                            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#beginnerClass">
-                                                <span class="card-left"><img src="assets/images/icon/2.png" alt="icon">4 | 5-6 years</span>
-                                                <span class="card-middle">Beginner class</span>
-                                                <span class="card-right"><i class="zmdi zmdi-minus"></i><i class="zmdi zmdi-plus hover"></i></span>
-                                            </button>
-                                        </div>
-                                        <div id="beginnerClass" class="collapse fade" data-bs-parent="#accordionExample">
-                                            <div class="card-body">
-                                                <div class="row">   
-                                                    <div class="col-md-6">
-                                                        <div class="class-left">
-                                                            <h3 class="login-title">swim clasess for Beginner</h3>
-                                                            <p class="heading-p">Age 5-6 Years</p>
-                                                            <p class="heading-p">Class Time : 10am-11am</p>
-                                                            <p class="main">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis notrud.</p>
-                                                            <p class="heading-p">Totall Class - 20</p>
-                                                            <button><span>Register Now</span></button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="class-right">
-                                                            <img src="assets/images/class/4.jpg" alt="class">
-                                                        </div>    
-                                                    </div>
-                                                </div>   
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header" id="adultHeading">
-                                            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#adultClass">
-                                                <span class="card-left"><img src="assets/images/icon/2.png" alt="icon">5 | 6-12 years</span>
-                                                <span class="card-middle">Adult class</span>
-                                                <span class="card-right"><i class="zmdi zmdi-minus"></i><i class="zmdi zmdi-plus hover"></i></span>
-                                            </button>
-                                        </div>
-                                        <div id="adultClass" class="collapse fade" data-bs-parent="#accordionExample">
-                                            <div class="card-body">
-                                                <div class="row">   
-                                                    <div class="col-md-6">
-                                                        <div class="class-left">
-                                                            <h3 class="login-title">swim clasess for adult</h3>
-                                                            <p class="heading-p">Age 6-12 Years</p>
-                                                            <p class="heading-p">Class Time : 10am-11am</p>
-                                                            <p class="main">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis notrud.</p>
-                                                            <p class="heading-p">Totall Class - 20</p>
-                                                            <button><span>Register Now</span></button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="class-right">
-                                                            <img src="assets/images/class/5.jpg" alt="class">
-                                                        </div>    
-                                                    </div>
-                                                </div>     
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </div>    
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- End of Our Classes Area -->
-                <!-- Start of Instructor Area -->
-                <!-- <div class="instructor-area bg-gray pt-76 pb-80">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="section-title text-center">
-                                    <h2>our best instructor</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-lg-10">
-                                <div class="slick-wrapper">
-                                    <div class="insturctor-owl">
-                                        <div class="custom-col">
-                                            <div class="single-instructor blue">
-                                                <div class="inst-img">
-                                                    <img src="assets/images/insturctor/2.jpg" alt="insturctor">
-                                                    <div class="inst-content text-center pt-36 pb-40 pl-30 pr-30">
-                                                        <h5>Swim Instructor</h5>
-                                                        <h6>Mohosin khan</h6>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                                        <ul>
-                                                            <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
-                                                            <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
-                                                            <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
-                                                            <li><a href="#"><i class="zmdi zmdi-linkedin"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="custom-col">
-                                            <div class="single-instructor red">
-                                                <div class="inst-img">
-                                                    <img src="assets/images/insturctor/3.jpg" alt="insturctor">
-                                                    <div class="inst-content text-center pt-36 pb-40 pl-30 pr-30">
-                                                        <h5>Swim Instructor</h5>
-                                                        <h6>Mohosin khan</h6>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                                        <ul>
-                                                            <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
-                                                            <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
-                                                            <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
-                                                            <li><a href="#"><i class="zmdi zmdi-linkedin"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="custom-col">
-                                            <div class="single-instructor">
-                                                <div class="inst-img">
-                                                    <img src="assets/images/insturctor/1.jpg" alt="insturctor">
-                                                    <div class="inst-content text-center pt-36 pb-40 pl-30 pr-30">
-                                                        <h5>Swim Instructor</h5>
-                                                        <h6>Mohosin khan</h6>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                                        <ul>
-                                                            <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
-                                                            <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
-                                                            <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
-                                                            <li><a href="#"><i class="zmdi zmdi-linkedin"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="custom-col">
-                                            <div class="single-instructor blue">
-                                                <div class="inst-img">
-                                                    <img src="assets/images/insturctor/2.jpg" alt="insturctor">
-                                                    <div class="inst-content text-center pt-36 pb-40 pl-30 pr-30">
-                                                        <h5>Swim Instructor</h5>
-                                                        <h6>Mohosin khan</h6>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                                        <ul>
-                                                            <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
-                                                            <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
-                                                            <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
-                                                            <li><a href="#"><i class="zmdi zmdi-linkedin"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="custom-col">
-                                            <div class="single-instructor red">
-                                                <div class="inst-img">
-                                                    <img src="assets/images/insturctor/3.jpg" alt="insturctor">
-                                                    <div class="inst-content text-center pt-36 pb-40 pl-30 pr-30">
-                                                        <h5>Swim Instructor</h5>
-                                                        <h6>Mohosin khan</h6>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                                        <ul>
-                                                            <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
-                                                            <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
-                                                            <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
-                                                            <li><a href="#"><i class="zmdi zmdi-linkedin"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="custom-col">
-                                            <div class="single-instructor">
-                                                <div class="inst-img">
-                                                    <img src="assets/images/insturctor/1.jpg" alt="insturctor">
-                                                    <div class="inst-content text-center pt-36 pb-40 pl-30 pr-30">
-                                                        <h5>Swim Instructor</h5>
-                                                        <h6>Mohosin khan</h6>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                                        <ul>
-                                                            <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
-                                                            <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
-                                                            <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
-                                                            <li><a href="#"><i class="zmdi zmdi-linkedin"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                    <!-- End of Testimonal Area -->
+                    <!--Start of gallery Area-->
+                    <!-- <div class="project-area">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="section-title text-center">
+                                        <h2>our gallery</h2>
                                     </div> 
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- End of Instructor Area -->
-                <!-- Start of Testimonal Area -->
-                <div class="testimonial-area">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="testimonial-owl owl-carousel">
-                                    <div class="col">
-                                        <div class="testimonial-content text-center pt-75 pb-100 mt-80 mb-80">
-                                            <h3>what clients say?</h3>
-                                            <i class="zmdi zmdi-quote first"></i>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et daenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. voluptate velit esse cillum dolore eu fugiat swimmer ground</p>
-                                            <i class="zmdi zmdi-quote"></i>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="grid">
+                                        <div class="grid-item cat1 cat3">
+                                            <div class="portfolio-img">
+                                                <img src="assets/images/portfolio/1.jpg" alt="project" />
+                                                <div class="portfolio-hover-wrapper">
+                                                    <div class="portfolio-hover">
+                                                        <div class="hover-content">
+                                                            <a class="img-poppu" href="assets/images/portfolio/1.jpg">
+                                                                <i class="zmdi zmdi-eye"></i>
+                                                            </a>
+                                                            <h4>Mini Infant kids</h4>
+                                                            <p>Lorem ipsum dolor sit amet, lenim ad minim veniam</p>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="testimonial-content text-center pt-75 pb-100 mt-80 mb-80">
-                                            <h3>what client say?</h3>
-                                            <i class="zmdi zmdi-quote first"></i>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et daenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. voluptate velit esse cillum dolore eu fugiat swimmer ground</p>
-                                            <i class="zmdi zmdi-quote"></i>
+                                        <div class="grid-item cat2 cat3">
+                                            <div class="portfolio-img">
+                                                <img src="assets/images/portfolio/2.jpg" alt="project" />
+                                                <div class="portfolio-hover-wrapper">
+                                                    <div class="portfolio-hover">
+                                                        <div class="hover-content">
+                                                            <a class="img-poppu" href="assets/images/portfolio/2.jpg">
+                                                                <i class="zmdi zmdi-eye"></i>
+                                                            </a>
+                                                            <h4>Mini Infant kids</h4>
+                                                            <p>Lorem ipsum dolor sit amet, lenim ad minim veniam</p>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="testimonial-content text-center pt-75 pb-100 mt-80 mb-80">
-                                            <h3>what client say?</h3>
-                                            <i class="zmdi zmdi-quote first"></i>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et daenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. voluptate velit esse cillum dolore eu fugiat swimmer ground</p>
-                                            <i class="zmdi zmdi-quote"></i>
+                                        <div class="grid-item cat1 cat2">
+                                            <div class="portfolio-img">
+                                                <img src="assets/images/portfolio/3.jpg" alt="project" />
+                                                <div class="portfolio-hover-wrapper">
+                                                    <div class="portfolio-hover">
+                                                        <div class="hover-content">
+                                                            <a class="img-poppu" href="assets/images/portfolio/3.jpg">
+                                                                <i class="zmdi zmdi-eye"></i>
+                                                            </a>
+                                                            <h4>Mini Infant kids</h4>
+                                                            <p>Lorem ipsum dolor sit amet, lenim ad minim veniam</p>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End of Testimonal Area -->
-                <!--Start of gallery Area-->
-                <!-- <div class="project-area">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="section-title text-center">
-                                    <h2>our gallery</h2>
-                                </div> 
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="grid">
-                                    <div class="grid-item cat1 cat3">
-                                        <div class="portfolio-img">
-                                            <img src="assets/images/portfolio/1.jpg" alt="project" />
-                                            <div class="portfolio-hover-wrapper">
-                                                <div class="portfolio-hover">
-                                                    <div class="hover-content">
-                                                        <a class="img-poppu" href="assets/images/portfolio/1.jpg">
-                                                            <i class="zmdi zmdi-eye"></i>
-                                                        </a>
-                                                        <h4>Mini Infant kids</h4>
-                                                        <p>Lorem ipsum dolor sit amet, lenim ad minim veniam</p>
-                                                    </div>
-                                                </div> 
+                                        <div class="grid-item cat2">
+                                            <div class="portfolio-img">
+                                                <img src="assets/images/portfolio/4.jpg" alt="project" />
+                                                <div class="portfolio-hover-wrapper">
+                                                    <div class="portfolio-hover">
+                                                        <div class="hover-content">
+                                                            <a class="img-poppu" href="assets/images/portfolio/4.jpg">
+                                                                <i class="zmdi zmdi-eye"></i>
+                                                            </a>
+                                                            <h4>Mini Infant kids</h4>
+                                                            <p>Lorem ipsum dolor sit amet, lenim ad minim veniam</p>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-item cat2 cat3">
+                                            <div class="portfolio-img">
+                                                <img src="assets/images/portfolio/5.jpg" alt="project" />
+                                                <div class="portfolio-hover-wrapper">
+                                                    <div class="portfolio-hover">
+                                                        <div class="hover-content">
+                                                            <a class="img-poppu" href="assets/images/portfolio/5.jpg">
+                                                                <i class="zmdi zmdi-eye"></i>
+                                                            </a>
+                                                            <h4>Mini Infant kids</h4>
+                                                            <p>Lorem ipsum dolor sit amet, lenim ad minim veniam</p>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-item cat1 cat3">
+                                            <div class="portfolio-img">
+                                                <img src="assets/images/portfolio/6.jpg" alt="project" />
+                                                <div class="portfolio-hover-wrapper">
+                                                    <div class="portfolio-hover">
+                                                        <div class="hover-content">
+                                                            <a class="img-poppu" href="assets/images/portfolio/6.jpg">
+                                                                <i class="zmdi zmdi-eye"></i>
+                                                            </a>
+                                                            <h4>Mini Infant kids</h4>
+                                                            <p>Lorem ipsum dolor sit amet, lenim ad minim veniam</p>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-item cat1 cat3">
+                                            <div class="portfolio-img">
+                                                <img src="assets/images/portfolio/7.jpg" alt="project" />
+                                                <div class="portfolio-hover-wrapper">
+                                                    <div class="portfolio-hover">
+                                                        <div class="hover-content">
+                                                            <a class="img-poppu" href="assets/images/portfolio/7.jpg">
+                                                                <i class="zmdi zmdi-eye"></i>
+                                                            </a>
+                                                            <h4>Mini Infant kids</h4>
+                                                            <p>Lorem ipsum dolor sit amet, lenim ad minim veniam</p>
+                                                        </div>
+                                                    </div> 
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="grid-item cat2 cat3">
-                                        <div class="portfolio-img">
-                                            <img src="assets/images/portfolio/2.jpg" alt="project" />
-                                            <div class="portfolio-hover-wrapper">
-                                                <div class="portfolio-hover">
-                                                    <div class="hover-content">
-                                                        <a class="img-poppu" href="assets/images/portfolio/2.jpg">
-                                                            <i class="zmdi zmdi-eye"></i>
-                                                        </a>
-                                                        <h4>Mini Infant kids</h4>
-                                                        <p>Lorem ipsum dolor sit amet, lenim ad minim veniam</p>
-                                                    </div>
-                                                </div> 
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item cat1 cat2">
-                                        <div class="portfolio-img">
-                                            <img src="assets/images/portfolio/3.jpg" alt="project" />
-                                            <div class="portfolio-hover-wrapper">
-                                                <div class="portfolio-hover">
-                                                    <div class="hover-content">
-                                                        <a class="img-poppu" href="assets/images/portfolio/3.jpg">
-                                                            <i class="zmdi zmdi-eye"></i>
-                                                        </a>
-                                                        <h4>Mini Infant kids</h4>
-                                                        <p>Lorem ipsum dolor sit amet, lenim ad minim veniam</p>
-                                                    </div>
-                                                </div> 
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item cat2">
-                                        <div class="portfolio-img">
-                                            <img src="assets/images/portfolio/4.jpg" alt="project" />
-                                            <div class="portfolio-hover-wrapper">
-                                                <div class="portfolio-hover">
-                                                    <div class="hover-content">
-                                                        <a class="img-poppu" href="assets/images/portfolio/4.jpg">
-                                                            <i class="zmdi zmdi-eye"></i>
-                                                        </a>
-                                                        <h4>Mini Infant kids</h4>
-                                                        <p>Lorem ipsum dolor sit amet, lenim ad minim veniam</p>
-                                                    </div>
-                                                </div> 
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item cat2 cat3">
-                                        <div class="portfolio-img">
-                                            <img src="assets/images/portfolio/5.jpg" alt="project" />
-                                            <div class="portfolio-hover-wrapper">
-                                                <div class="portfolio-hover">
-                                                    <div class="hover-content">
-                                                        <a class="img-poppu" href="assets/images/portfolio/5.jpg">
-                                                            <i class="zmdi zmdi-eye"></i>
-                                                        </a>
-                                                        <h4>Mini Infant kids</h4>
-                                                        <p>Lorem ipsum dolor sit amet, lenim ad minim veniam</p>
-                                                    </div>
-                                                </div> 
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item cat1 cat3">
-                                        <div class="portfolio-img">
-                                            <img src="assets/images/portfolio/6.jpg" alt="project" />
-                                            <div class="portfolio-hover-wrapper">
-                                                <div class="portfolio-hover">
-                                                    <div class="hover-content">
-                                                        <a class="img-poppu" href="assets/images/portfolio/6.jpg">
-                                                            <i class="zmdi zmdi-eye"></i>
-                                                        </a>
-                                                        <h4>Mini Infant kids</h4>
-                                                        <p>Lorem ipsum dolor sit amet, lenim ad minim veniam</p>
-                                                    </div>
-                                                </div> 
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item cat1 cat3">
-                                        <div class="portfolio-img">
-                                            <img src="assets/images/portfolio/7.jpg" alt="project" />
-                                            <div class="portfolio-hover-wrapper">
-                                                <div class="portfolio-hover">
-                                                    <div class="hover-content">
-                                                        <a class="img-poppu" href="assets/images/portfolio/7.jpg">
-                                                            <i class="zmdi zmdi-eye"></i>
-                                                        </a>
-                                                        <h4>Mini Infant kids</h4>
-                                                        <p>Lorem ipsum dolor sit amet, lenim ad minim veniam</p>
-                                                    </div>
-                                                </div> 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                               portfolio_gallery_area End 
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- End of gallery Area -->
-                <!-- Start of pricing Area -->
-                <!-- <div class="pricing-area pt-75 pb-80 text-center">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="section-title">
-                                    <h2>our pricing plan</h2> 
+                                portfolio_gallery_area End 
                                 </div>
                             </div>
                         </div>
-                        <div class="row g-4">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single-price">
-                                    <div class="price-table">
-                                        <div class="table-head">
-                                            <h4>Silver Pack</h4>
-                                            <div class="price-icon">
-                                                <span><img src="assets/images/pricing/1.png" alt="price"></span>
-                                            </div>
-                                        </div>
-                                        <div class="table-body">
-                                            <h2>$95 <span> / month</span></h2>
-                                            <ul>
-                                                <li>Mini - Toddler</li>
-                                                <li>Coffee Break</li>
-                                                <li>Total Classes - 15</li>
-                                                <li>Group Lesson</li>
-                                            </ul>
-                                            <button><span>Register Now</span></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single-price offer">
-                                    <div class="price-table">
-                                        <div class="table-head">
-                                            <h4>Premium Pack</h4>
-                                            <div class="price-icon">
-                                                <span><img src="assets/images/pricing/2.png" alt="price"></span>
-                                            </div>
-                                        </div>
-                                        <div class="table-body">
-                                            <h2>$95 <span> / month</span></h2>
-                                            <ul>
-                                                <li>Mini - Toddler</li>
-                                                <li>Coffee Break</li>
-                                                <li>Total Classes - 15</li>
-                                                <li>Group Lesson</li>
-                                            </ul>
-                                            <button class="active"><span>Register Now</span></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single-price">
-                                    <div class="price-table">
-                                        <div class="table-head">
-                                            <h4>Platinum Pack</h4>
-                                            <div class="price-icon">
-                                                <span><img src="assets/images/pricing/3.png" alt="price"></span>
-                                            </div>
-                                        </div>
-                                        <div class="table-body">
-                                            <h2>$95 <span> / month</span></h2>
-                                            <ul>
-                                                <li>Mini - Toddler</li>
-                                                <li>Coffee Break</li>
-                                                <li>Total Classes - 15</li>
-                                                <li>Group Lesson</li>
-                                            </ul>
-                                            <button><span>Register Now</span></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>             
-                    </div>
-                </div> -->
-                <!-- End of pricing Area -->
-                <!-- start of fun Area -->
-                <div class="fun-area pt-110 pb-110">
-                    <div class="container">
-                        <div class="row g-4">
-                            <div class="col-lg-3 col-sm-6">
-                                <div class="single-fun text-center">
-                                    <div class="fun-img">
-                                        <span><img src="assets/images/fun/1.png" alt="fun"></span>
-                                    </div>
-                                    <div class="fun-content">
-                                        <h3 class="counter odometer" data-count-to="2400">0</h3>
-                                        <h5>happy clients</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6">
-                                <div class="single-fun text-center">
-                                    <div class="fun-img">
-                                        <span><img src="assets/images/fun/2.png" alt="fun"></span>
-                                    </div>
-                                    <div class="fun-content">
-                                        <h3 class="counter odometer" data-count-to="28">0</h3>
-                                        <h5>experience</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6">
-                                <div class="single-fun text-center">
-                                    <div class="fun-img">
-                                        <span><img src="assets/images/fun/3.png" alt="fun"></span>
-                                    </div>
-                                    <div class="fun-content">
-                                        <h3 class="counter odometer" data-count-to="90">0</h3>
-                                        <h5>success</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6">
-                                <div class="single-fun text-center">
-                                    <div class="fun-img">
-                                        <span><img src="assets/images/fun/4.png" alt="fun"></span>
-                                    </div>
-                                    <div class="fun-content">
-                                        <h3 class="counter odometer" data-count-to="560">0</h3>
-                                        <h5>awards</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End of fun Area -->
-                <!-- Start of blog Area -->
-                
-                <!-- End of classes Area -->
-                <!-- Start of contact Area -->
-                <div class="contact-area text-center pb-80">
-                    <div class="container">
-                        <div class="row">      
-                            <div class="col-md-4">
-                                <div class="single-contact">
-                                    <div class="contact-icon">
-                                        <i class="zmdi zmdi-home"></i>
-                                    </div>
-                                    <div class="contact-info">
-                                        <h5>Address</h5>
-                                        <p>Elizabeth Tower, 6th Floor<br> Medtown, New York</p>
-                                    </div> 
-                                </div>
-                            </div>      
-                            <div class="col-md-4">
-                                <div class="single-contact">
-                                    <div class="contact-icon">
-                                        <i class="zmdi zmdi-phone"></i>
-                                    </div>
-                                    <div class="contact-info">
-                                        <h5>phone number</h5>
-                                        <p>0123456789<br>
-                                            0123456789</p>
-                                    </div>
-                                </div>
-                            </div>      
-                            <div class="col-md-4">
-                                <div class="single-contact">
-                                    <div class="contact-icon">
-                                        <i class="zmdi zmdi-email"></i>
-                                    </div>
-                                    <div class="contact-info">
-                                        <h5>email</h5>
-                                        <p>demo@example.com<br>
-                                            demo@example.com </p>
-                                    </div>
-                                </div>
-                            </div>  
-                        </div>
-                    </div>
-                </div>
-                <!-- End of contact Area -->
-                <!-- Start of Footer area -->
-                <footer class="footer-area">
-                    <div class="main-footer pt-76 pb-72">
+                    </div> -->
+                    <!-- End of gallery Area -->
+                    <!-- Start of pricing Area -->
+                    <!-- <div class="pricing-area pt-75 pb-80 text-center">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-4 col-md-7 col-12 mb-md--40">
-                                    <div class="footer-widget text-left f-left">
-                                        <h3>twitter Feed</h3>
-                                        <div class="single-feed mb-15">
-                                            <h5>Post By: John Doe <span>12 Feb 2017</span></h5>
-                                            <p><a href="#">#There</a> are may <a href="#">“varations”</a> pasages of texi Lorem Ipsum available njhgh fhg excercise</p>
-                                        </div>
-                                        <div class="single-feed">
-                                            <h5>Post By: John Doe <span>12 Feb 2017</span></h5>
-                                            <p>There are may <a href="#">#“variations”</a> pasages of texi</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-5 col-12 mb-md--40">
-                                    <div class="footer-widget text-center">
-                                        <a href="index.html"><img src="assets/images/logo/footer-logo.png" alt="logo"></a>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, seo eiusmod tempor in hjgcididunt ut labore eagna al veniam, quis nostrud </p>
-                                        <div class="footer-icons">
-                                            <ul>
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-12">
-                                    <div class="footer-widget f-right">
-                                        <h3 class="text-left">latest post</h3>
-                                        <div class="post">
-                                            <div class="post-img">
-                                                <img src="assets/images/post/1.jpg" alt="post">
-                                                <a href="#">
-                                                    <i class="zmdi zmdi-link"></i>
-                                                </a>
-                                            </div>
-                                            <div class="post-img">
-                                                <img src="assets/images/post/2.jpg" alt="post">
-                                                <a href="#">
-                                                    <i class="zmdi zmdi-link"></i>
-                                                </a>
-                                            </div>
-                                            <div class="post-img">
-                                                <img src="assets/images/post/3.jpg" alt="post">
-                                                <a href="#">
-                                                    <i class="zmdi zmdi-link"></i>
-                                                </a>
-                                            </div>
-                                            <div class="post-img">
-                                                <img src="assets/images/post/4.jpg" alt="post">
-                                                <a href="#">
-                                                    <i class="zmdi zmdi-link"></i>
-                                                </a>
-                                            </div>
-                                        </div>
+                                <div class="col-12">
+                                    <div class="section-title">
+                                        <h2>our pricing plan</h2> 
                                     </div>
                                 </div>
                             </div>
+                            <div class="row g-4">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-price">
+                                        <div class="price-table">
+                                            <div class="table-head">
+                                                <h4>Silver Pack</h4>
+                                                <div class="price-icon">
+                                                    <span><img src="assets/images/pricing/1.png" alt="price"></span>
+                                                </div>
+                                            </div>
+                                            <div class="table-body">
+                                                <h2>$95 <span> / month</span></h2>
+                                                <ul>
+                                                    <li>Mini - Toddler</li>
+                                                    <li>Coffee Break</li>
+                                                    <li>Total Classes - 15</li>
+                                                    <li>Group Lesson</li>
+                                                </ul>
+                                                <button><span>Register Now</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-price offer">
+                                        <div class="price-table">
+                                            <div class="table-head">
+                                                <h4>Premium Pack</h4>
+                                                <div class="price-icon">
+                                                    <span><img src="assets/images/pricing/2.png" alt="price"></span>
+                                                </div>
+                                            </div>
+                                            <div class="table-body">
+                                                <h2>$95 <span> / month</span></h2>
+                                                <ul>
+                                                    <li>Mini - Toddler</li>
+                                                    <li>Coffee Break</li>
+                                                    <li>Total Classes - 15</li>
+                                                    <li>Group Lesson</li>
+                                                </ul>
+                                                <button class="active"><span>Register Now</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-price">
+                                        <div class="price-table">
+                                            <div class="table-head">
+                                                <h4>Platinum Pack</h4>
+                                                <div class="price-icon">
+                                                    <span><img src="assets/images/pricing/3.png" alt="price"></span>
+                                                </div>
+                                            </div>
+                                            <div class="table-body">
+                                                <h2>$95 <span> / month</span></h2>
+                                                <ul>
+                                                    <li>Mini - Toddler</li>
+                                                    <li>Coffee Break</li>
+                                                    <li>Total Classes - 15</li>
+                                                    <li>Group Lesson</li>
+                                                </ul>
+                                                <button><span>Register Now</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>             
                         </div>
-                    </div> 
-                    <div class="footer-bottom pt-8 pb-10">
+                    </div> -->
+                    <!-- End of pricing Area -->
+                    <!-- start of fun Area -->
+                    <div class="fun-area pt-110 pb-110">
                         <div class="container">
-                            <div class="row">
-                                <div class="col-12 text-center">
-                                    <p class="copyright">&copy; 2022  Made by <a href="https://charlestoriola.netlify.app/" target="blank"><strong>Charlie</strong></a>.</p>
+                            <div class="row g-4">
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="single-fun text-center">
+                                        <div class="fun-img">
+                                            <span><img src="assets/images/fun/1.png" alt="fun"></span>
+                                        </div>
+                                        <div class="fun-content">
+                                            <h3 class="counter odometer" data-count-to="2400">0</h3>
+                                            <h5>happy clients</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="single-fun text-center">
+                                        <div class="fun-img">
+                                            <span><img src="assets/images/fun/2.png" alt="fun"></span>
+                                        </div>
+                                        <div class="fun-content">
+                                            <h3 class="counter odometer" data-count-to="28">0</h3>
+                                            <h5>experience</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="single-fun text-center">
+                                        <div class="fun-img">
+                                            <span><img src="assets/images/fun/3.png" alt="fun"></span>
+                                        </div>
+                                        <div class="fun-content">
+                                            <h3 class="counter odometer" data-count-to="90">0</h3>
+                                            <h5>success</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="single-fun text-center">
+                                        <div class="fun-img">
+                                            <span><img src="assets/images/fun/4.png" alt="fun"></span>
+                                        </div>
+                                        <div class="fun-content">
+                                            <h3 class="counter odometer" data-count-to="560">0</h3>
+                                            <h5>awards</h5>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>   
-                </footer>
-                <!-- End of Footer area -->
-            </div>   
-            <!--End of Bg White--> 
-        </div>    
-    </div><!--End of Main Wrapper Area--> 
-
+                    </div>
+                    <!-- End of fun Area -->
+                    <!-- Start of blog Area -->
+                    
+                    <!-- End of classes Area -->
+                    <!-- Start of contact Area -->
+                    <div class="contact-area text-center pb-80">
+                        <div class="container">
+                            <div class="row">      
+                                <div class="col-md-4">
+                                    <div class="single-contact">
+                                        <div class="contact-icon">
+                                            <i class="zmdi zmdi-home"></i>
+                                        </div>
+                                        <div class="contact-info">
+                                            <h5>Address</h5>
+                                            <p>Elizabeth Tower, 6th Floor<br> Medtown, New York</p>
+                                        </div> 
+                                    </div>
+                                </div>      
+                                <div class="col-md-4">
+                                    <div class="single-contact">
+                                        <div class="contact-icon">
+                                            <i class="zmdi zmdi-phone"></i>
+                                        </div>
+                                        <div class="contact-info">
+                                            <h5>phone number</h5>
+                                            <p>0123456789<br>
+                                                0123456789</p>
+                                        </div>
+                                    </div>
+                                </div>      
+                                <div class="col-md-4">
+                                    <div class="single-contact">
+                                        <div class="contact-icon">
+                                            <i class="zmdi zmdi-email"></i>
+                                        </div>
+                                        <div class="contact-info">
+                                            <h5>email</h5>
+                                            <p>demo@example.com<br>
+                                                demo@example.com </p>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of contact Area -->
+                    <!-- Start of Footer area -->
+                    <footer class="footer-area">
+                        <div class="main-footer pt-76 pb-72">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-7 col-12 mb-md--40">
+                                        <div class="footer-widget text-left f-left">
+                                            <h3>twitter Feed</h3>
+                                            <div class="single-feed mb-15">
+                                                <h5>Post By: John Doe <span>12 Feb 2017</span></h5>
+                                                <p><a href="#">#There</a> are may <a href="#">“varations”</a> pasages of texi Lorem Ipsum available njhgh fhg excercise</p>
+                                            </div>
+                                            <div class="single-feed">
+                                                <h5>Post By: John Doe <span>12 Feb 2017</span></h5>
+                                                <p>There are may <a href="#">#“variations”</a> pasages of texi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-5 col-12 mb-md--40">
+                                        <div class="footer-widget text-center">
+                                            <a href="index.html"><img src="assets/images/logo/footer-logo.png" alt="logo"></a>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, seo eiusmod tempor in hjgcididunt ut labore eagna al veniam, quis nostrud </p>
+                                            <div class="footer-icons">
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-12">
+                                        <div class="footer-widget f-right">
+                                            <h3 class="text-left">latest post</h3>
+                                            <div class="post">
+                                                <div class="post-img">
+                                                    <img src="assets/images/post/1.jpg" alt="post">
+                                                    <a href="#">
+                                                        <i class="zmdi zmdi-link"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="post-img">
+                                                    <img src="assets/images/post/2.jpg" alt="post">
+                                                    <a href="#">
+                                                        <i class="zmdi zmdi-link"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="post-img">
+                                                    <img src="assets/images/post/3.jpg" alt="post">
+                                                    <a href="#">
+                                                        <i class="zmdi zmdi-link"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="post-img">
+                                                    <img src="assets/images/post/4.jpg" alt="post">
+                                                    <a href="#">
+                                                        <i class="zmdi zmdi-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="footer-bottom pt-8 pb-10">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <p class="copyright">&copy; 2022  Made by <a href="https://charlestoriola.netlify.app/" target="blank"><strong>Charlie</strong></a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                    </footer>
+                    <!-- End of Footer area -->
+                </div>   
+                <!--End of Bg White--> 
+            </div>    
+        </div><!--End of Main Wrapper Area--> 
+    </div>
 
 
 
